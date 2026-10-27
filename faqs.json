@@ -1,0 +1,40 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "patterns": ["\\bhello\\b", "\\bhi\\b", "\\bhey\\b", "good (morning|afternoon|evening)"],
+      "response": "Hello! I'm ShopBot. Ask me about hours, prices, shipping, returns or contact details."
+    },
+    {
+      "name": "hours",
+      "patterns": ["\\b(hours?|open|opening|close|closing|timings?)\\b"],
+      "response": "We are open Monday to Saturday, 9 AM to 6 PM. Closed on Sundays."
+    },
+    {
+      "name": "shipping",
+      "patterns": ["\\b(ship|shipping|delivery|deliver)\\w*"],
+      "response": "Standard delivery takes 3-5 business days. Orders above 999 get free shipping."
+    },
+    {
+      "name": "returns",
+      "patterns": ["\\b(return|refund|exchange)\\w*"],
+      "response": "You can return any product within 7 days of delivery for a full refund."
+    },
+    {
+      "name": "price",
+      "patterns": ["\\b(price|cost|how much|discount|offer)\\w*"],
+      "response": "Prices are listed on each product page. We run discounts every weekend!"
+    },
+    {
+      "name": "payment",
+      "patterns": ["\\b(pay|payment|upi|card|cod)\\w*"],
+      "response": "We accept UPI, debit/credit cards, net banking and cash on delivery."
+    },
+    {
+      "name": "contact",
+      "patterns": ["\\b(contact|email|phone|call|support|help)\\b"],
+      "response": "Reach us at support@shopbot.example or call 1800-000-000."
+    }
+  ],
+  "fallback": "Sorry, I didn't understand that. Try asking about hours, shipping, returns, prices, payment or contact."
+}
